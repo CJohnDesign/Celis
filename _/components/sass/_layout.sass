@@ -1,23 +1,62 @@
 // Nav 	
- 	
+
+#home-logo
+	width 					: 80%
+	margin	 				: 2em auto 0
+	max-width 				: 25em
  	
 // Main Content
 
-#frame
-	width             	: 88%
-	margin            	: 15em auto
-	text-align        	: center
+#home-header
+	@include coverbackground('/img/home-bg.jpg')
+	height 					: 70vh
+	text-align        		: center
+	.col-md-4
+		background-color	: rgba(0, 0, 0, 0.4)
+		height 				: 70vh
 
-.sep
-		
-	height 	        	: 2em
-	padding           	: 2em
-	z-index 	        : 99
+#home-bar
+	height 					: 25vh
+	padding 				: 0 !important
  	
+#home-store
+	img
+		width 				: 100%
+
  	
-// Secondary Content 	
- 	
- 	
+// Secondary Content 
+
+
+// Buttons
+
+#join-now
+	color 					: white
+	background-color 		: $theme-color
+	width 					: 100%
+	margin-top 				: 1em
+	font-family	 			: "majesti"
+	font-size 				: 2em
+	border 					: 3px solid $theme-color
+	background 				: display
+	box-shadow 				: 0 0 5px #222
+	border-radius 			: 10px
+	transition 				: all .8s ease
+
+#join-now:hover
+	color 					: $theme-color
+	background-color 		: $theme-color
+	width 					: 100%
+	margin-top 				: 1em
+	font-family	 			: "majesti"
+	font-size 				: 2em
+	border 					: 3px solid $theme-color
+	background 				: none
+	box-shadow 				: 0 0 5px #222
+	border-radius 			: 10px
+	transition 				: all .2s ease
+
+
+
 // Footer
  	
  	
@@ -26,3 +65,14 @@
 
 // Mobile
  	
+@media (max-width: $screen-sm-max)
+	
+	#home-logo
+		width 					: 70%
+		margin	 				: 6em auto 5em
+		max-width 				: 25em
+	
+	#home-header
+		height 					: 100vh
+		.col-md-4
+			height 				: 100vh
