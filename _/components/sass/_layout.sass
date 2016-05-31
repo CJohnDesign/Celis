@@ -1,78 +1,322 @@
 // Nav 	
 
+#home-logo-contain
+	display 				: flex
+	flex-direction 			: column
+	text-align 				: center
+	align-items 			: center
+	justify-content 		: center
+	height 					: 100%
+
+
 #home-logo
+	@include display-flex
+	@include flex-direction(column)
 	width 					: 80%
-	margin	 				: 2em auto 0
 	max-width 				: 25em
- 	
+//	margin	 				: 3em auto 8em
+
+
+// Default Logo
+
+.logo
+	width 					: 85%
+	margin 					: .75em auto 1.5em
+
+#logo 
+	width 					: 40%
+	margin	 				: 1em
+	max-width 				: 22em
+
+#login-pane
+	background 				: white
+	background-clip 		: padding-box
+	border 					: 10px solid rgba(12, 13, 13, 0.25)
+	border-radius 			: 10px
+	margin 					: 20vh auto 10px auto
+	max-width 				: 425px
+	padding 				: 2em 2em 1.5em
+	width 					: auto
+	outline-color 			: $celis-green
+	h1
+		color 				: $celis-black
+		text-align			: left
+		font-size 			: 1.8em
+	p
+		text-align			: left
+
+#site-login
+	margin: 0
+	padding: 0
+	border: 0
+	vertical-align: baseline
+	background: transparent
+
+#login-header
+	@include coverbackground('http://localhost:8888/img/home-bg.jpg')
+	height 					: 100vh
+	text-align        		: center
+
 // Main Content
 
 #home-header
-	@include coverbackground('/img/home-bg.jpg')
-	height 					: 70vh
+	@include coverbackground('http://cjohn.design/celis/img/home-bg.jpg')
+	height 					: 68vh
 	text-align        		: center
-	.col-md-4
-		background-color	: rgba(0, 0, 0, 0.4)
-		height 				: 70vh
+
+#headline-div
+	h1
+		color              	: white
+		font-size 			: 5em
+		font-weight        	: 500
+		line-height 		: .8em
+		font-family 		: $type
+		font-size 			: 13em
+		margin-top 			: 1em
+		text-shadow 		: 0 0 .5em #000000, 0 0 1.5em #000000
+
+#cta-div
+	display	 				: flex
+	flex-direction 			: column
+	justify-content 		: center
+	background-color		: rgba(0, 0, 0, 0.5)
+	height 					: 68vh
+	overflow 				: scroll
+	text-align	 			: left
+	justify-content 		: flex-end
+	h1
+		font-family 		: $type
+		color 				: white
+		line-height 		: .8em
+
+
+#cta-btns
+	margin-bottom 			: 1em
+ 	
+#headline
+	text-align	 			: left
+
+#brand-header
+	@include coverbackground('http://cjohn.design/celis/img/home-bg.jpg')
+ 	
+// Secondary Content 
 
 #home-bar
-	height 					: 25vh
-	padding 				: 0 !important
- 	
+	overflow 				: hidden
+	a
+		strong
+			position 		: relative
+			bottom 			: -.2em
+
 #home-store
 	img
 		width 				: 100%
 
- 	
-// Secondary Content 
-
 
 // Buttons
 
-#join-now
-	color 					: white
-	background-color 		: $theme-color
-	width 					: 100%
+.btn
+	color 					: $celis-green
+	border 					: 3px solid $celis-green
 	margin-top 				: 1em
-	font-family	 			: "majesti"
-	font-size 				: 2em
-	border 					: 3px solid $theme-color
-	background 				: display
-	box-shadow 				: 0 0 5px #222
-	border-radius 			: 10px
+	font-family	 			: $type4
+	float 					: left
+	border-radius 			: 8px
 	transition 				: all .8s ease
+	text-transform 			: uppercase
+	letter-spacing 			: 2px
+	background-color 		: transparent
 
-#join-now:hover
-	color 					: $theme-color
-	background-color 		: $theme-color
-	width 					: 100%
-	margin-top 				: 1em
-	font-family	 			: "majesti"
-	font-size 				: 2em
-	border 					: 3px solid $theme-color
-	background 				: none
-	box-shadow 				: 0 0 5px #222
-	border-radius 			: 10px
+#cta-div
+	.btn
+		background-color 	: $celis-black-dim
+		&:hover 				
+			background-color : $celis-green
+
+#login-pane 	
+	min-height 				: 35em
+
+#site-login
+	min-height 				: 35em
+	div
+		width 				: 100%
+		display 			: inline-block
+	.btn
+		margin 				: .6em 0 1em
+		width 				: 100%
+	footer
+		text-align 			: center
+		label
+			margin 			: 0 auto
+
+#form	
+	height 					: 13em
+
+.btn:hover
+	color 					: white
+	background-color 		: $celis-green
+	border 					: 3px solid $celis-green
+	background 				: display	
 	transition 				: all .2s ease
 
+.btn:focus
+	color 					: white
+
+#join-now
+	width 					: 100%
+	font-size 				: 1.75em
+	margin-top 				: 0.2em
+
+#how-it-works
+	width 					: 48%
+	margin-right 			: 2%
+
+#log-in 					
+	width 					: 48%
+	margin-left 			: 2%
+
+#cookbook-text
+	h3
+		text-shadow 		: 0 0 .25em #000000, 0 0 .5em #000000
+		font-size 			: 3em
+		position 			: absolute
+		left 				: -13.4em
+		top 				: 3.5em
 
 
 // Footer
- 	
+ 
+#soc-div
+	text-align 				: right
+
+
+#soc
+	width 					: 10em
+	margin 					: 0 0 0 auto
+	path
+		fill 				: $celis-black
+		cursor  			: pointer
+	rect
+		fill 				: $celis-bg		
+		cursor 				: default
  	
 // Tablet
 
+@media (max-width: $screen-md-max)
+
+	#cookbook-text
+		h3
+			font-size 			: 2em
+			left 				: -16.4em
+			top 				: 4.5em
 
 // Mobile
  	
 @media (max-width: $screen-sm-max)
 	
+	h1 	
+		font-size 			: 6em
+	
+	h2 	
+		font-size 			: 1.5em
+
 	#home-logo
-		width 					: 70%
-		margin	 				: 6em auto 5em
-		max-width 				: 25em
+		width 				: 65%
+		position 			: absolute
+		top 				: 1em
+		left 				: 1em
+		margin 				: 0
+		padding 			: 0
 	
 	#home-header
-		height 					: 100vh
+		height 				: 100vh
 		.col-md-4
 			height 				: 100vh
+
+	#cta-div
+		height 					: 100vh
+
+	#soc-div
+		text-align 				: center
+
+	#soc
+		margin 					: 0 auto	
+
+	#join-now
+		font-size 				: 1.5em
+
+	#cookbook-text
+		h3
+			font-size 			: 1.5em
+			top 				: -2.2em
+			left 				: 1em
+
+
+@media (max-width: $screen-ip5)
+
+	#home-logo
+		width 				: 65%
+		position 			: absolute
+		top 				: 1em
+		left 				: 1em
+		margin 				: 0
+		padding 			: 0
+
+	#join-now
+		font-size 				: 1.2em
+
+	#cookbook-text
+		h3
+			font-size 			: 1.25em
+			top 				: -2.2em
+			left 				: 1em
+
+// Wide but short
+
+@media 	(min-width: $screen-md-min)
+
+	@media (max-height: 800px)
+
+		h1 	
+			font-size 			: 3em
+		
+		h2 	
+			font-size 			: 1.5em
+
+		#home-header
+			height 				: 100vh
+		
+		#cta-div
+			height 				: 100vh
+			justify-content 	: flex-end
+
+		#home-logo
+			width 				: 50%
+			position 			: absolute
+			top 				: 1em
+			left 				: 1em
+			margin 				: 0
+			padding 			: 0
+
+@media (max-height: 500px)
+	
+	#cta-div
+		text-align 					: right
+
+	#home-logo 
+		width 						: 35%
+
+// L
+
+@media (min-width: $screen-md-min)
+
+	#cookbook-text
+		padding-left 			: 0
+
+// XL
+
+@media (min-width: 1900px)
+
+	#home-logo
+		margin	 				: 2em auto 2em
+

@@ -1,17 +1,88 @@
+// 
+// @license
+// MyFonts Webfont Build ID 3225868, 2016-05-30T12:35:03-0400
+// 
+// The fonts listed in this notice are subject to the End User License
+// Agreement(s) entered into by the website owner. All other parties are 
+// explicitly restricted from using the Licensed Webfonts(s).
+// 
+// You may obtain a valid license at the URLs below.
+// 
+// Webfont: GlossDrop-Regular by phospho
+// URL: http://www.myfonts.com/fonts/phospho/gloss-drop/regular/
+// Copyright: Copyright &#x00A9; 2015 by phospho. All rights reserved.
+// Licensed pageviews: 10,000
+// 
+// 
+// License: http://www.myfonts.com/viewlicense?type=web&buildid=3225868
+// 
+// © 2016 MyFonts Inc
+// 
+
+
+// @import must be at top of file, otherwise CSS will not work 
+@import url("//hello.myfonts.net/count/31390c")
+
+@font-face
+	font-family: 'GlossDrop-Regular'
+	src: url('/fonts/31390C_0_0.eot')
+	src: url('/fonts/31390C_0_0.eot?#iefix') format("embedded-opentype"), url('webfonts/31390C_0_0.woff2') format("woff2"), url('/fonts/31390C_0_0.woff') format("woff"), url('/fonts/31390C_0_0.ttf') format("truetype")
+ 
+
 @font-face
 	font-family 		: 'Majesti'
 	src 				: url('/fonts/Majesti-Banner-Bold.otf')
 
+@font-face
+	font-family 		: 'Franchise Bold'
+	font-style 			: normal
+	font-weight 		: normal
+	src 				: local("Franchise Bold"), url('/fonts/Franchise-Bold-hinted.woff') format("woff")
+
+@font-face
+	font-family 		: 'Cabin Bold'
+	src 				: url('/fonts/Cabin-Bold.otf')
+
+@font-face
+	font-family 		: 'Cabin'
+	src 				: url('/fonts/Cabin-Regular.otf')
+
+@font-face
+	font-family 		: 'Brandon Light'
+	src 				: url('/fonts/Brandon_light.otf')
+
+@font-face
+	font-family 		: 'Brandon Bold'
+	src 				: url('/fonts/Brandon_bld.otf')
+
+@font-face
+	font-family 		: 'Brandon'
+	src 				: url('/fonts/Brandon_bld.otf')
+
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700)
+@import url(https://fonts.googleapis.com/css?family=Yantramanav:900)
 
 // Typefaces
 
-$type  		 			: "Majesti", "times", serif
-$type2  		 		: "lato", san-serif
+$type  		 			: 'GlossDrop-Regular', 'Majesti', 'Times', serif
+$type2  		 		: 'Lato', san-serif
+$type3 					: 'Franchise Bold', Lato Bold, san-serif 
+$type4 					: 'Cabin Bold', san-serif
+$type5 					: 'Cabin', san-serif
+$type6 					: 'Brandon Light', san-serif
+$type7 					: 'Brandon', san-serif
 
 // Currently red - Change accordingly
 
-$theme-color 			: #5BB247
+$celis-black 			: #231F20
+$celis-black-dim		: rgba(0,0,0,0.25)
+$celis-green			: #5BB247
+$celis-blue 			: #5BB8C7
+$celis-bg 				: #EEEBE4
+$celis-bg-alt			: #d6cfc4
+$celis-highlight 		: #fcfdfb
+$celis-dim 				: #d4d2d0
+
 
 // Grays from light to dark (g0-g4)
 
@@ -34,9 +105,10 @@ $screen-md-max 			: ($screen-lg-min - 1)
 
 $height-sm-min 			: 411px
 $height-xs-max 			: ($height-sm-min - 1)
-$height-md-min 			: 600px
+$height-md-min 			: 800px
 $height-sm-max 			: ($height-md-min - 1)
 $height-lg-min 			: 992px
 $height-md-max 			: ($height-lg-min - 1)
 
 
+	

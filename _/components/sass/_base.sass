@@ -1,34 +1,82 @@
 // HTML
 
+svg
+	display 			: block
+
 body 
-	background-color   	: $g0
+	font-family 		: $type5
+	background-color   	: $celis-bg
 	color              	: $g1
+	transition 			: all .8s ease
+
+footer
+	p a
+		font-family     : $type4
+		font-size 		: .8em
+		text-transform 	: uppercase
+		letter-spacing 	: 1px
  	
 h1 	
-	font-family        	: $type
-	color              	: white
-	font-size 			: 4em
-	font-weight        	: 700
-	line-height 		: .8em
+	font-family        	: $type6
+	color              	: $celis-black
+	font-size 			: 3.5em
+	font-weight        	: 500
+	line-height 		: 1.2em
 
 h2 	
-	font-family        	: $type2
+	font-family        	: $type6
 	color              	: white
-	font-size 			: 1.8em
+	font-size 			: 1.6em
 	font-weight        	: 400
 	margin-top 			: -.3em
+	letter-spacing 		: 1px
+
+h3
+	font-family 		: $type7
+	color 				: white
  	
 p 	
-	font-family        	: $type
+	font-family        	: $type5
 	color              	: $g4
 	font-weight        	: 400
  	
 a 	
-	font-family        	: $type
-	color              	: $g4
+	font-family        	: $type6
+	color              	: $celis-black
 	font-weight        	: 400
- 	
+	cursor 				: pointer
 
+a:hover
+	color 				: $celis-black
+	text-decoration 	: none
+
+a:focus
+	color 				: $celis-black
+	text-decoration 	: none
+
+
+strong
+	font-size 			: 2em
+
+small
+	color 				: $g1
+
+hr
+	border 				: 0
+	height 				: 1px
+	background 			: #333
+	background-image 	: linear-gradient(to right, #ccc, #333, #ccc)
+	margin-top 			: .7em
+	margin-bottom 		: .6em
+
+label 	
+	font-family 		: $type6
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill
+	background-color 	: $celis-bg
+ 	
+.glyphicon .glyphicon-menu-hamburger
+	color 				: $celis-black
 
 .sep	
 	height 	        		: 0
@@ -39,16 +87,23 @@ a
 .text-left
 	text-align 				: left
 
+.pointer
+	cursor 					: pointer
+
 
 @media (max-width: $screen-sm-max)
 
-h1 	
-
-
-h2 	
-
- 	
-p 	
-
- 	
-a 	
+	footer
+		text-align 			: center
+	
+	h1 	
+	
+	
+	h2 	
+	
+	 	
+	p 	
+	
+	 	
+	a 	
+	

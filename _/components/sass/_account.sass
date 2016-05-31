@@ -1,0 +1,85 @@
+// My Account Flexboxes
+
+#my-account
+    h1
+        font-family                     : $type6
+
+    h2, h3, p
+        font-family                     : $type3
+        color                           : $celis-black
+
+    h2
+        margin                          : 0 auto .25em
+
+    .a, .b, article, aside
+        padding                         : .5em
+
+
+.panel-a
+    @include display-flex
+    @include flex-direction(column)
+    height                              : 100%
+    margin                              : -0.5em
+    
+    
+.panel-b
+    @include display-flex
+    @include flex(1)
+    background-color                    : $celis-bg
+    
+    .panel-c
+        @include display-flex
+        @include flex-direction(column)
+        @include flex(1)
+   
+        
+        article 
+            @include flex(1)
+            background-color            : $celis-bg-alt
+            margin                      : .5em
+            height                      : 18em
+        
+        section
+            @include display-flex
+            @include flex-direction(row)
+            height                      : 12em
+            background                  : transparent
+        .a 
+            @include flex(1 auto)
+            background                  : $celis-bg-alt
+            margin                      : .5em
+        
+        .b 
+            width                       : 10em
+            background                  : grey
+            margin                      : .5em
+        
+    #profile-box
+        width 							: 18em
+        background-color                : $celis-bg-alt
+        margin                          : 0.5em
+
+
+#profile-pic
+    @include display-flex
+    align-items 					: center
+    margin 							: 2em auto
+    width 							: 8em
+    height 							: 8em
+
+
+@media (max-width: $screen-sm-max)
+
+    .panel-b
+        @include flex-direction(column)
+
+        #profile-box
+            width 							: 98%
+            margin                          : 0.5em auto
+    
+    .panel-c
+        section
+            width 						: 100%
+
+
+
