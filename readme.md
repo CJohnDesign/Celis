@@ -1,5 +1,5 @@
 # Celis
 
-View live demo at: [cjohn.design/celis](https://cjohn.design/celis). 
+View live demo at: [celis.cjohn.design](https://celis.cjohn.design). 
 
 > (MIT License)
